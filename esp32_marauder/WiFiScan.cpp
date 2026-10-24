@@ -5951,7 +5951,7 @@ void WiFiScan::executeBLESpam(EBLEPayloadType type) {
       this->setBaseMacAddress(macAddr);
       NimBLEDevice::init("");
       #ifdef HAS_NIMBLE_2
-        if (!NimBLEDevice::setPower(20))
+        if (!NimBLEDevice::setPower(9))
           Serial.println("Failed to set NimBLE output power");
       #endif
       NimBLEServer *pServer = NimBLEDevice::createServer();
